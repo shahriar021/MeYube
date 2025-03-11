@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router";
 
 const SideBar = () => {
   const store = useSelector((store) => store.header.toggleToBody);
@@ -9,7 +10,9 @@ const SideBar = () => {
   return (
     <div className="p-3   w-[120px]  h-full">
       <ui>
-        <li>Home</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <li>Shorts</li>
         <li>Subsciption</li>
       </ui>
