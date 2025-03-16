@@ -12,6 +12,7 @@ const WatchVideo = () => {
   return (
     <div className="p-3 ">
       <iframe
+        className="rounded-lg"
         width="1200"
         height="600"
         src={`https://www.youtube.com/embed/${searchParams.get(

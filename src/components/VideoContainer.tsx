@@ -8,13 +8,11 @@ const VideoContainer = () => {
   useEffect(() => {
     const getYOutube = async () => {
       const data = await fetch(YOU_TUBE_API);
-      console.log(data, "response.");
       const jsonData = await data.json();
       setVideos(jsonData.items);
     };
     getYOutube();
   }, []);
-  console.log(vides, "vides");
   return (
     <div className="flex flex-wrap hover:cursor-pointer">
       {vides &&
