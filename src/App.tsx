@@ -5,6 +5,7 @@ import store from "./redux/store";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import MainBody from "./components/MainBody";
 import WatchVideo from "./components/WatchVideo";
+import Demo from "./components/Demo";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -13,7 +14,8 @@ function App() {
       element: <Body />,
       children: [
         { path: "/", element: <MainBody /> },
-        { path: "watch", element: <WatchVideo /> }
+        { path: "watch", element: <WatchVideo /> },
+        { path: "demo", element: <Demo /> }
       ]
     }
   ]);

@@ -30,7 +30,6 @@ const Header = () => {
   }, [searchuery]);
 
   const getSearchSuggestion = async () => {
-    console.log("api calling..");
     const data = await fetch(YOU_TUBE_API_SEARCH_SUGGESTION + searchuery);
     const jsonData = await data.json();
     setSearcResult(jsonData[1]);

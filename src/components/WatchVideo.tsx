@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router";
 import { closeSidebar } from "../redux/feature/header/headerSlice";
+import CommentsContainer from "./CommentsContainer";
 
 const WatchVideo = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ const WatchVideo = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
+      <CommentsContainer />
     </div>
   );
 };
